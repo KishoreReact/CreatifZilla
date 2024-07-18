@@ -1,0 +1,417 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #F8F5F0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 20px 10px 20px;
+}
+
+header {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+@media (max-width: 768px) { /* You can adjust the max-width value based on your definition of mobile view */
+    header {
+        width: 136%;
+       
+    }
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 37px; /* Adjust the size of the logo image */
+    margin-right: 10px;
+}
+
+header .logo span {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #1F392C;
+    font-weight: 500;
+}
+
+header .join-button {
+    background-color: #FF60E6;
+    color: #1F392C;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F8F5F0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 768px) { /* You can adjust the max-width value based on your definition of mobile view */
+    .hero {
+        width: 130%;
+    }
+}
+
+.hero .image-container {
+    position: absolute;
+    top: 21px;
+    width: 20%;
+}
+
+.hero .image-container.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+/* .hero .image-container img {
+    width: 58%;
+    display: block;
+} */
+
+.hero .small-image {
+    position: absolute;
+}
+
+.hero .hands-left {
+    top: 0%;
+    left: -14%;
+    width: 62%;
+    height: auto;
+}
+
+.bulb-left {
+    top: 30%;
+    left: 55%;
+    width: 15%;
+    height: auto;
+}
+
+.hero .fb-left {
+    top: 44%;
+    left: 6%;
+    width: 8%;
+    height: auto;
+}
+
+.hero .inst-left {
+    top: 87%;
+    left: 19%;
+    width: 15%;
+    height: auto;
+}
+
+.hero .hands-right {
+    top: 43%;
+    right: 7%;
+    width: 60%;
+    height: auto;
+}
+
+.hero .bulb-right {
+    top: 25%;
+    right: 77%;
+    width: 21%;
+    height: auto;
+}
+
+.hero .fb-right {
+    top: -2%;
+    right: 16%;
+    width: 9%;
+    height: auto;
+}
+
+.hero .ytb-right {
+    top: 85%;
+    right: 35%;
+    width: 8%;
+    height: auto;
+}
+
+.hero h1 {
+    font-size: 95px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+    position: relative; /* Add relative positioning to adjust z-index */
+    z-index: 1; /* Ensure it is displayed above the image */
+}
+
+@media (max-width: 768px) { /* You can adjust the max-width value based on your definition of mobile view */
+    .hero h1 {
+        font-size: 61px;
+    }
+}
+
+.hero p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    padding: 0px 102px;
+    color: #1F392C;
+}
+
+.hero .cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .cta input {
+    padding: 15px 140px;
+    border: none;
+    border-radius: 24px;
+    margin-right: 10px;
+    width: 45%;
+}
+
+.hero .cta button {
+    background-color: #FF60E6;
+    color: #1F392C;
+    font-weight: 600;
+    border: none;
+    padding: 10px 27px;
+    border-radius: 24px;
+    cursor: pointer;
+    margin-left: -97px;
+}
+
+.partners {
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line-vector {
+    position: absolute;
+    left: 0;
+    top: 61%;
+    transform: translateY(-50%);
+    width: 33%;
+    z-index: 1;
+}
+
+.partners h2 {
+    width: 45%;
+    font-size: 2.3em;
+    margin: 40px;
+}
+@media (max-width: 768px) { /* You can adjust the max-width value based on your definition of mobile view */
+    .partners h2 {
+        width: 100%;
+    font-size: 1.6em;
+    margin: 10px 0px 56px 130px;
+    }
+}
+
+.partners-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    z-index: 2; /* Ensure the text is in front of the image */
+    width: 85%;
+    position: relative; /* Add this to position child elements absolutely */
+}
+
+
+.partners .partners-text {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    position: relative;
+    z-index: 3; /* Ensure the text is in front of both image and other elements */
+    display: flex;
+}
+
+.partners .timeline {
+    background-color: #ff69b4;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 28%;
+    text-align: justify;
+    color: #1F392C;
+    font-weight: 500;
+    font-size: 16px;
+    height: 30%;
+    margin: 10px;
+}
+
+.platform {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.platform img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) { /* You can adjust the max-width value based on your definition of mobile view */
+    footer {
+        width: 128%;
+    }
+}
+
+.content {
+    position: relative; /* Add relative positioning to allow absolute positioning of children */
+    width: 64%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    margin: auto; /* Center content within its container */
+}
+.line-left{
+    width: 60%;
+    display: flex;
+}
+.line-right{
+    width: 68%;
+    display: flex;
+}
+
+.partnersub{
+    width: 40%;
+    text-align: start;
+    padding: 40px;
+}
+.partner-head{
+    font-size: xx-large;
+    font-weight: 600;
+}
+.card-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1F392C;
+    font-weight: 600;
+}
+.illustration-container {
+    position: relative;
+    display: inline-block;
+}
+
+.illustration-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) { /* You can adjust the max-width value based on your definition of mobile view */
+    .illustration-image {
+        margin-left: 78px;
+    }
+}
+
+.youtube-icon {
+    position: absolute;
+    top: 24%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 12%;
+    height: auto;
+}
+@media (max-width: 768px) { /* You can adjust the max-width value based on your definition of mobile view */
+    .youtube-icon{
+        left: 92%
+    }
+}
+.pintrest {
+    background-color: #FFADF2;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 28%;
+    text-align: justify;
+    color: #1F392C;
+    font-weight: 500;
+    font-size: 16px;
+    position: absolute; /* Make this element positioned absolutely */
+    top: 30px; /* Adjust the top position to overlap as needed */
+    z-index: 4; /* Ensure it is on top of the partners-text */
+    right: -133px;
+}
+
+@media (max-width: 768px) { /* You can adjust the max-width value based on your definition of mobile view */
+    .pintrest {
+        right: -173px;
+        top: 26px;
+    }
+}
+
+.center-circle {
+    position: absolute;
+    top: 33%;
+    left: 38%;
+    transform: translateX(-50%);
+    width: 66%;
+    z-index: 2;
+}
+
+@media (max-width: 768px) { /* You can adjust the max-width value based on your definition of mobile view */
+    .center-circle {
+        width: 0%;
+    }
+}
+.vector{
+    width: 20%;
+    margin-left: 188px;
+    transform: translateY(-227%);
+}
+@media (max-width: 768px) { /* You can adjust the max-width value based on your definition of mobile view */
+    .vector {
+        width: 100%;
+        margin-left: 145px;
+    }
+}
