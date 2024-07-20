@@ -22,7 +22,7 @@ header {
 }
 @media (max-width: 768px) { /* You can adjust the max-width value based on your definition of mobile view */
     header {
-        width: 136%;
+        width: 155%;
        
     }
 }
@@ -79,7 +79,7 @@ header .join-button {
 }
 @media (max-width: 768px) { /* You can adjust the max-width value based on your definition of mobile view */
     .hero {
-        width: 130%;
+        width: 153%;
     }
 }
 
@@ -220,6 +220,12 @@ header .join-button {
     align-items: center;
 }
 
+@media (max-width: 768px) { /* You can adjust the max-width value based on your definition of mobile view */
+    .partners {
+        width: 130%;
+    }
+}
+
 .line-vector {
     position: absolute;
     left: 0;
@@ -238,7 +244,7 @@ header .join-button {
     .partners h2 {
         width: 100%;
     font-size: 1.6em;
-    margin: 10px 0px 56px 130px;
+    margin: 10px 0px 56px 31px;
     }
 }
 
@@ -251,6 +257,15 @@ header .join-button {
     z-index: 2; /* Ensure the text is in front of the image */
     width: 85%;
     position: relative; /* Add this to position child elements absolutely */
+    
+}
+
+@media (max-width: 768px) { /* You can adjust the max-width value based on your definition of mobile view */
+    .partners-content{
+        justify-content: space-between;
+        width: 100%;
+        margin-left: 45px;
+    }
 }
 
 
@@ -265,18 +280,32 @@ header .join-button {
     display: flex;
 }
 
+@media (max-width: 768px) { /* You can adjust the max-width value based on your definition of mobile view */
+    .partners .partners-text{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+
 .partners .timeline {
     background-color: #ff69b4;
     color: #fff;
     padding: 20px;
     border-radius: 10px;
-    width: 28%;
+    width: 50%;
     text-align: justify;
     color: #1F392C;
     font-weight: 500;
     font-size: 16px;
-    height: 30%;
+    height: 71%;
     margin: 10px;
+}
+
+@media (max-width: 768px) { /* You can adjust the max-width value based on your definition of mobile view */
+    .partners .timeline{
+        width: 51%;
+    }
 }
 
 .platform {
@@ -298,7 +327,7 @@ footer {
 
 @media (max-width: 768px) { /* You can adjust the max-width value based on your definition of mobile view */
     footer {
-        width: 128%;
+        width: 153%;
     }
 }
 
@@ -377,18 +406,52 @@ footer {
     color: #1F392C;
     font-weight: 500;
     font-size: 16px;
-    position: absolute; /* Make this element positioned absolutely */
-    top: 30px; /* Adjust the top position to overlap as needed */
-    z-index: 4; /* Ensure it is on top of the partners-text */
-    right: -133px;
+    position: absolute; 
+    z-index: 4; 
+    right: -13px;
 }
 
 @media (max-width: 768px) { /* You can adjust the max-width value based on your definition of mobile view */
     .pintrest {
-        right: -173px;
-        top: 26px;
+        right: -40px;
+        height: 93%;
     }
 }
+
+@media (max-width: 1220px) and (min-width: 1053px) {
+    .pintrest {
+        height:91% ;
+    }
+}
+
+@media (max-width: 1053px) and (min-width: 954px) {
+    .pintrest {
+        height:91% ;
+    }
+}
+@media (max-width: 953px) and (min-width: 919px) {
+    .pintrest {
+        height:91% ;
+    }
+}
+@media (max-width: 918px) and (min-width: 906px) {
+    .pintrest {
+        height:91% ;
+    }
+}
+
+@media (max-width: 799px) and (min-width: 769px) {
+    .pintrest {
+        height:92% ;
+    }
+}
+@media (max-width: 1030px) and (min-width: 981px) {
+    .pintrest {
+        width: 26%;
+    }
+}
+
+
 
 .center-circle {
     position: absolute;
@@ -411,7 +474,63 @@ footer {
 }
 @media (max-width: 768px) { /* You can adjust the max-width value based on your definition of mobile view */
     .vector {
-        width: 100%;
-        margin-left: 145px;
+        width: 62%;
+        
     }
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.3s ease; /* Smooth transition */
+    cursor: grab; /* Indicates draggable area */
+}
+
+.carousel-item {
+    flex: 0 0 auto; /* Allow items to be of their content width */
+     width: 47%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) { /* You can adjust the max-width value based on your definition of mobile view */
+    .carousel-item {
+        width: 51%;
+       
+    }
+}
+
+.card-head img {
+    width: 50px; /* Adjust image size as needed */
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #333;
 }
